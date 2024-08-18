@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.proyectomarket.ui.map.MapFragment"
+        android:label="@string/menu_mapa" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.proyectomarket.ui.home.HomeFragment"
+        android:label="@string/menu_productos"
+        tools:layout="@layout/fragment_productos" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.proyectomarket.ui.gallery.GalleryFragment"
+        android:label="@string/menu_carrito"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.proyectomarket.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_pedidos"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_cuentauser"
+        android:name="com.example.proyectomarket.ui.cuenta.CuentaUserFragment"
+        android:label="@string/menu_cuentauser" />
+    <fragment
+        android:id="@+id/nav_pedidodetalle"
+        android:name="com.example.proyectomarket.ui.detallepedido.DetalleFragment"
+        android:label="@string/menu_pedidodetalle" />
+</navigation>
